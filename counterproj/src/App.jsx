@@ -1,19 +1,24 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
 
 
   const [counter,setCounter] = useState(15)
+ const limit = 25;
+ const minlimit = 12
 
   const addValue = () => {
-    
-  setCounter(counter + 1 )
-}
+    if(counter<limit ) 
+    // setCounter(prevcounter=>prevcounter  +1)
+    // setCounter(prevcounter=>prevcounter  +1)
+    // setCounter(prevcounter=>prevcounter  +1)
+    // setCounter(prevcounter=>prevcounter  +1)
+    setCounter(counter + 1 )
+  }
   const removeValue = () => {
     console.log("value removed", counter);
+    if (counter >minlimit ) 
     setCounter(counter - 1 )
     
   }
