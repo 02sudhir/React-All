@@ -1,8 +1,13 @@
 import React from 'react'
 
+
 export default function Card() {
+
+   
     return (
         <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          
+            
             <a href="/">
                 <img className="p-8 rounded-t-lg" src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Best-Amazing-Images-For-Desktop-620x388.jpg" alt="product_image1" />
             </a>

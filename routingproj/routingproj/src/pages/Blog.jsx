@@ -14,7 +14,7 @@ function Blog() {
             
             <p>
                
-                {v.body}
+                {/* {v.body} */}
                 
                 <button><Link  to={`/blog/${v.id}`}>Read-more</Link></button>
               

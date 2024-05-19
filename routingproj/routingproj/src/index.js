@@ -8,8 +8,11 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Course from './pages/Course';
 import Blog from './pages/Blog';
-
 import BlogDetail from './pages/BlogDetail';
+import Error404 from './pages/Error404';
+
+
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -35,7 +38,12 @@ let AllRoute = createBrowserRouter(
     {
       path:'blog/:id',
       element:<BlogDetail />
+    },
+    {
+      path:'*',
+      element:<Error404 />
     }
+   
     
   ])
 root.render(

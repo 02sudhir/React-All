@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: cadetblue;
+  background-image: url(https://getstackhost.com/wp-content/uploads/2022/07/Stories-B1.png);
+  
 }
 
 code {

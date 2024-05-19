@@ -4,6 +4,10 @@ import './App.css'
 import { ThemeProvider } from './context/Theme'
 import ThemeBtn from './components/ThemeButton'
 import Card from './components/Card'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 function App() {
  const [themeMode,setThememode] =useState('light')
@@ -35,8 +39,11 @@ useEffect(() => {
 }, [themeMode])
 
 
+toast('Theme changed', { delay: 500 });
+
   return (
     <>
+      
 
     <ThemeProvider value={{themeMode,lightTheme,darkTheme}}>
     {/* <div className={`App ${themeMode}`}>
@@ -62,6 +69,7 @@ useEffect(() => {
 
 
     </ThemeProvider>
+    <ToastContainer />
     </>
   )
 }
